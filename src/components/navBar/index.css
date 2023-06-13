@@ -1,0 +1,35 @@
+.NavBar {
+  background: rgb(14, 46, 159);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 46, 159, 1) 0%,
+    rgba(117, 9, 121, 1) 93%
+  );
+
+  padding: 10px 40px;
+  width: 100%;
+}
+
+.NavBar_items {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.NavBar_items a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+.NavBar_items a:hover {
+  text-decoration: none;
+  color: rgb(236, 175, 32);
+  font-weight: 800;
+}
