@@ -2,12 +2,8 @@ import "./index.css";
 
 const Cards = ({ data }) => {
   return (
-    <div className="todos">
-      {data.map((todo) => (
-        <div className="todo" key={todo.id}>
-          <p>{todo.todo}</p>
-        </div>
-      ))}
+    <div className={` todo ${data.completed && "completed"}`} key={data.id}>
+      <p>{data.todo}</p>
     </div>
   );
 };
